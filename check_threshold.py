@@ -1,13 +1,8 @@
 import mlflow
 import sys
-<<<<<<< HEAD
 import os
 
 def check_model_accuracy(run_id=None, threshold=0.85):
-=======
-
-def check_model_accuracy(run_id, threshold=0.85):
->>>>>>> 5c72f9e (run-train)
     """Check if model accuracy meets threshold"""
     try:
         # Read run ID from file if not provided directly
@@ -44,10 +39,7 @@ def check_model_accuracy(run_id, threshold=0.85):
         sys.exit(1)
 
 if __name__ == "__main__":
-<<<<<<< HEAD
-=======
-    import os
->>>>>>> 5c72f9e (run-train)
+
     run_id = sys.argv[1] if len(sys.argv) > 1 else None
     threshold = float(sys.argv[2]) if len(sys.argv) > 2 else 0.85
     check_model_accuracy(run_id, threshold)
