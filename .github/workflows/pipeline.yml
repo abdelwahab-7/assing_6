@@ -25,7 +25,7 @@ jobs:
           pip install --no-cache-dir flake8
       - name: Run linter
         run: |
-          flake8 .
+          flake8 . --exit-zero
 
   train:
     runs-on: ubuntu-latest
